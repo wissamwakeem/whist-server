@@ -1,0 +1,12 @@
+{
+  "name": "whist-server",
+  "version": "1.0.0",
+  "description": "Room server for the Whist Godot card game. No dependencies.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/rules.test.js && node test/sim.js 3"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}

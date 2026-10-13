@@ -1,0 +1,12 @@
+# Render.com blueprint: New > Blueprint picks this up and creates the free web service.
+services:
+  - type: web
+    name: whist-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /whist
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
